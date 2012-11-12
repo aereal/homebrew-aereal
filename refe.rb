@@ -1,9 +1,10 @@
 require 'formula'
 
 class Refe < Formula
-  url 'http://doc.ruby-lang.org/archives/201107/ruby-refm-1.9.2-dynamic-20110729.tar.gz'
+  url 'http://doc.ruby-lang.org/archives/201208/ruby-refm-1.9.3-dynamic-20120829.tar.gz'
   homepage 'http://redmine.ruby-lang.org/projects/rurema/'
-  md5 '537f4f50272cea1ae20f5e08a025aa51'
+  sha1 '28ab71616a4bce4ac76df3a3f79ab17b8a6fccf6'
+  version '20120829'
 
   def options
     [
@@ -25,11 +26,11 @@ class Refe < Formula
       f.write refe_command
       f.chmod 0755
     end
-    prefix.install %w(bitclust/ db-1_8_7/ db-1_9_2/)
+    prefix.install %w(bitclust/ db-1_8_7/ db-1_9_3/)
   end
 
   def refe_command
-    default_version = ARGV.include?('--1.8.7') ? '1_8_7' : '1_9_2'
+    default_version = ARGV.include?('--1.8.7') ? '1_8_7' : '1_9_3'
     <<-REFE.gsub /^\s+/, ''
     #!/bin/sh
     exec ruby -Ke -I #{prefix}/bitclust/lib #{prefix}/bitclust/bin/refe.rb -d #{prefix}/db-#{default_version} "$@"
