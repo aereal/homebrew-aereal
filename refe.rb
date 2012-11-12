@@ -33,7 +33,7 @@ class Refe < Formula
     default_version = ARGV.include?('--1.8.7') ? '1_8_7' : '1_9_3'
     <<-REFE.gsub /^\s+/, ''
     #!/bin/sh
-    exec ruby -Ke -I #{prefix}/bitclust/lib #{prefix}/bitclust/bin/refe.rb -d #{prefix}/db-#{default_version} "$@"
+    exec ruby -Ke -I #{prefix}/bitclust/lib #{prefix}/bitclust/bin/refe -d #{prefix}/db-#{default_version} "$@"
     REFE
   end
 end
