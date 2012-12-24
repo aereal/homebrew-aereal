@@ -2,9 +2,9 @@ require 'formula'
 
 class Perlbrew < Formula
   homepage 'http://perlbrew.pl'
-  url 'https://github.com/gugod/App-perlbrew/zipball/release-0.52'
-  version '0.52'
-  sha1 'fcccf0f366a03b663a4632f94f51e3ddc9df41f1'
+  url 'https://github.com/gugod/App-perlbrew/zipball/release-0.58'
+  version '0.58'
+  sha1 'ceabbee2c4793afd29e227b8f08721dff003033b'
 
   head 'git://github.com/gugod/App-perlbrew.git', :branch => 'master'
 
