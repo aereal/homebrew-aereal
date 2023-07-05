@@ -31,8 +31,6 @@ class TerraformLs0292 < Formula
     sha256 "ec83b7d55d4cc01b17e55765b3aa53ad740f2687376866e12d32fefedb99f8da"
   end
 
-  conflicts_with "terraform-ls"
-
   def install
     bin.install "terraform-ls"
   end
