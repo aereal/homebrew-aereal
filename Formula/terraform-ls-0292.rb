@@ -4,6 +4,7 @@ class TerraformLs0292 < Formula
   desc "Terraform Language Server"
   homepage "https://github.com/hashicorp/terraform-ls"
   version "0.29.2"
+  conflicts_with 'terraform-ls', because: 'provides same software but difference version'
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://releases.hashicorp.com/terraform-ls/0.29.2/terraform-ls_0.29.2_darwin_amd64.zip"
