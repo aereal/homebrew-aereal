@@ -1,6 +1,6 @@
 # original is https://github.com/hashicorp/homebrew-tap/blob/3030e1b7a514209fbebe6919d8a24eab4f2398d2/Formula/terraform-ls.rb
 
-class TerraformLs < Formula
+class TerraformLs0292 < Formula
   desc "Terraform Language Server"
   homepage "https://github.com/hashicorp/terraform-ls"
   version "0.29.2"
