@@ -8,7 +8,7 @@ class TerraformLs0292 < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://releases.hashicorp.com/terraform-ls/0.29.2/terraform-ls_0.29.2_darwin_amd64.zip"
-    sha256 "c08d6fd247a6bbf896e5157b086bed028013ae4597fbca1d4e9f46b6701022c4"
+    sha256 "cb4e2faeccca6b467851c0e4fdcf8b62a61627e2763ebe72cf2bfca1ccf7a20e"
   end
 
   if OS.mac? && Hardware::CPU.arm?
